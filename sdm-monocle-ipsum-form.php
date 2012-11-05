@@ -1,15 +1,22 @@
 <?php
 /*
-Plugin Name: Bacon Ipsum - Generator Form
-Description: Generates the input form for generating meaty bacon ipsum
-Plugin URI: https://github.com/petenelson/bacon-ipsum
-Version: 2.1.1
-Author: Pete Nelson (@GunGeekATX)
-Author URI: http://petenelson.com
+Plugin Name: Monocle Ipsum - Generator Form
+Description: Generates the input form for generating monocle ipsum
+Plugin URI: https://github.com/sdalmonte/monocle-ipsum
+Version: 1.0
+Author: Sam Dal Monte (@samd)
+Author URI: http://negativeboy.com
 */
 
-add_shortcode('gga-bacon-ipsum-form', 'gga_bacon_ipsum_form');
-function gga_bacon_ipsum_form($atts)
+/*
+Based on Bacon Ipsum 2.1.1 by Pete Nelson
+https://github.com/petenelson/bacon-ipsum
+http://petenelson.com
+@GunGeekATX
+*/
+
+add_shortcode('sdm-monocle-ipsum-form', 'sdm_monocle_ipsum_form');
+function sdm_monocle_ipsum_form($atts)
 {
 	$output = '';
 
@@ -29,11 +36,11 @@ function gga_bacon_ipsum_form($atts)
 				</tr>
 				<tr>
 					<td></td>
-					<td><input id="start-with-lorem" type="checkbox" name="start-with-lorem" value="1" checked="checked" /> <label for="start-with-lorem">Start with \'Bacon ipsum dolor sit amet...\'</label></td>
+					<td><input id="start-with-lorem" type="checkbox" name="start-with-lorem" value="1" checked="checked" /> <label for="start-with-lorem">Start with \'Monocle ipsum dolor sit amet...\'</label></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" value="Give me bacon" /></td>
+					<td><input type="submit" value="Give me monocle" /></td>
 				</tr>
 				</tbody>
 				</table>
@@ -44,9 +51,9 @@ function gga_bacon_ipsum_form($atts)
 	if (isset($_REQUEST["type"]))
 	{
 
-		require_once 'gga-BaconIpsumGenerator.php';
+		require_once 'sdm-MonocleIpsumGenerator.php';
 
-		$generator = new BaconIpsumGenerator();
+		$generator = new MonocleIpsumGenerator();
 		$number_of_paragraphs = 5;
 		if (isset($_REQUEST["paras"]))
 			$number_of_paragraphs = intval($_REQUEST["paras"]);

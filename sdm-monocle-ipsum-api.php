@@ -1,21 +1,28 @@
 <?php
 /*
-Plugin Name: Bacon Ipsum - API
+Plugin Name: Monocle Ipsum - API
 Description: Handles incoming API requests
-Plugin URI: https://github.com/petenelson/bacon-ipsum
-Version: 2.1.1
-Author: Pete Nelson (@GunGeekATX)
-Author URI: http://petenelson.com
+Plugin URI: https://github.com/sdalmonte/monocle-ipsum
+Version: 1.0
+Author: Sam Dal Monte (@samd)
+Author URI: http://negativeboy.com
 */
 
-add_action('posts_selection', 'gga_bacon_ipsum_api');
-function gga_bacon_ipsum_api() {
+/*
+Based on Bacon Ipsum 2.1.1 by Pete Nelson
+https://github.com/petenelson/bacon-ipsum
+http://petenelson.com
+@GunGeekATX
+*/
+
+add_action('posts_selection', 'sdm_monocle_ipsum_api');
+function sdm_monocle_ipsum_api() {
 
 	if (is_page('api') && isset($_REQUEST['type'])) { 
 		
-		require_once 'gga-BaconIpsumGenerator.php';
+		require_once 'sdm-MonocleIpsumGenerator.php';
 		
-		$generator = new BaconIpsumGenerator();
+		$generator = new MonocleIpsumGenerator();
 		$number_of_sentences = 0;
 		$number_of_paragraphs = 5;
 

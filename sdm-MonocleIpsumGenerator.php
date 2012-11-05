@@ -1,90 +1,83 @@
 <?php 
 /*
-Class: Bacon Ipsum Generator
-Author: Pete Nelson (@GunGeekATX)
-Version: 2.1.1
+Class: Monocle Ipsum Generator
+Author: Sam Dal Monte (@samd)
+Version: 1.0
 
-Revision History
-
-= v2.1.1 October 18, 2012 =
-* Added doner (http://en.wikipedia.org/wiki/Doner_kebab)
-
-= v2.1 July 21, 2012 =
-* Changed the Make_Some_Meaty_Filler() function to return an array of paragraphs, added default parameters
-* Added support for individual sentences
-* Added more randomness to commas in a sentence.  Instead of always adding a 
-  comma to a sentence with seven or more words, it will add one about 2/3rds of the time.
-
-= v2.0 July 14, 2012 =
-* First public release
-
+Based on Bacon Ipsum 2.1.1 by Pete Nelson
+https://github.com/petenelson/bacon-ipsum
+http://petenelson.com
+@GunGeekATX
 */
 
-class BaconIpsumGenerator {
+class MonocleIpsumGenerator {
 		
 	function GetWords($type) {
 
 
 		$meat = array(
-			'beef',
-			'chicken',
-			'pork',
-			'bacon',
-			'chuck',
-			'short loin',
-			'sirloin',
-			'shank',
-			'flank',
-			'sausage',
-			'pork belly',
-			'shoulder',
-			'cow',
-			'pig',
-			'ground round',
-			'hamburger',
-			'meatball',
-			'tenderloin',
-			'strip steak',
-			't-bone',
-			'ribeye',
-			'shankle',
-			'tongue',
-			'tail',
-			'pork chop',
-			'pastrami',
-			'corned beef',
-			'jerky',
-			'ham',
-			'fatback',
-			'ham hock',
-			'pancetta',
-			'pork loin',
-			'short ribs',
-			'spare ribs',
-			'beef ribs',
-			'drumstick',
-			'tri-tip',
-			'ball tip',
-			'venison',
-			'turkey',
-			'biltong',
-			'rump',
-			'jowl',
-			'salami',
-			'bresaola',
-			'meatloaf',
-			'brisket',
-			'boudin',
-			'andouille',
-			'capicola',
-			'swine',
-			'kielbasa',
-			'frankfurter',
-			'prosciutto',
-			'filet mignon',
-			'leberkas',
-			'turducken',
-			'doner'
+			'bespoke',
+			'Zürich',
+			'concierge',
+			'Porter',
+			'business class',
+			'Toto',
+			'Nordic',
+			'Scandinavian',
+			'Beams',
+			'Gaggenau',
+			'Tsutaya',
+			'flat white',
+			'pintxos',
+			'izakaya',
+			'global',
+			'Marylebone',
+			'tote bag',
+			'Lufthansa',
+			'soft power',
+			'boutique',
+			'hand-crafted',
+			'espresso',
+			'Muji',
+			'Boeing 777',
+			'charming',
+			'signature',
+			'wardrobe',
+			'Fast Lane',
+			'perfect',
+			'ryokan',
+			'punctual',
+			'mediocre',
+			'elegant',
+			'sleepy',
+			'uniforms',
+			'Swiss',
+			'liveable',
+			'Baggu',
+			'bulletin',
+			'Singapore',
+			'Ettinger',
+			'Sunspel',
+			'finest',
+			'airport',
+			'Comme des Garçons',
+			'exclusive',
+			'discerning',
+			'delightful',
+			'Ginza',
+			'extraordinary',
+			'sharp',
+			'international',
+			'boulevard',
+			'eclectic',
+			'smart',
+			'destination',
+			'intricate',
+			'lovely',
+			'exquisite',
+			'handsome',
+			'remarkable',
+			'joy'
 		);
 
 		$filler = array(
@@ -246,7 +239,7 @@ class BaconIpsumGenerator {
 
 			if ($i == 0 && $start_with_lorem && count($words) > 0) { 	
 				$words[0] = strtolower($words[0]);
-				$words = 'Bacon ipsum dolor sit amet ' . $words;
+				$words = 'Monocle ipsum dolor sit amet ' . $words;
 			}
 					
 			$paragraphs[]  = rtrim($words);
