@@ -21,30 +21,26 @@ function sdm_monocle_ipsum_form($atts)
 	$output = '';
 
 	$form = '
-		<p>Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+		<div id="monocle-ipsum-form">
+			<p>Our elegant, bespoke lorem ipsum text is expertly assembled by Florian-san and his team of the finest Swiss-Japanese craftsmen in their workshop on the shores of the Zürisee.</p>
 
-		<form id="make-it-meaty" action="' . site_url('/') . '" method="get">
-			<table>
-				<tbody>
-				<tr>
-					<td>Paragraphs:</td>
-					<td><input style="width: 40px;" type="text" name="paras" value="5" maxlength="2" /></td>
-				</tr>
-				<tr>
-					<td>Type:</td>
-					<td><input id="all-meat" type="radio" name="type" value="all-meat" checked="checked" /><label for="all-meat">All Meat</label> <input id="meat-and-filler" type="radio" name="type" value="meat-and-filler" /><label for="meat-and-filler">Meat and Filler</label></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><input id="start-with-lorem" type="checkbox" name="start-with-lorem" value="1" checked="checked" /> <label for="start-with-lorem">Start with \'Monocle ipsum dolor sit amet...\'</label></td>
-				</tr>
-				<tr>
-					<td></td>
-					<td><input type="submit" value="Give me monocle" /></td>
-				</tr>
-				</tbody>
-				</table>
-		</form>
+			<form id="make-it-bespoke" action="' . site_url('/') . '" method="get">
+				<div id="monocle-ipsum-paras">
+					Paragraphs:
+					<input style="width: 40px;" type="text" name="paras" value="5" maxlength="2" />
+				</div>
+				<div id="monocle-ipsum-type">
+					Type:
+					<input id="business-class" type="radio" name="type" value="business-class" checked="checked" /><label for="business-class">Business Class</label> <input id="economy-class" type="radio" name="type" value="economy-class" /><label for="economy-class">Economy Class</label>
+				</div>
+				<div id="monocle-ipsum-start-with">
+					<input id="start-with-lorem" type="checkbox" name="start-with-lorem" value="1" checked="checked" /> <label for="start-with-lorem">Start with \'Monocle ipsum dolor sit amet...\'</label>
+				</div>
+				<div id="monocle-ipsum-submit">
+					<input type="submit" value="With our compliments" />
+				</div>
+			</form>
+		</div>
 	';
 
 

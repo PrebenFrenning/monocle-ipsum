@@ -77,7 +77,15 @@ class MonocleIpsumGenerator {
 			'exquisite',
 			'handsome',
 			'remarkable',
-			'joy'
+			'joy',
+			'Winkreative',
+			'classic',
+			'premium',
+			'Asia-Pacific',
+			'alluring',
+			'emerging',
+			'cutting-edge',
+			'conversation'
 		);
 
 		$filler = array(
@@ -147,7 +155,7 @@ class MonocleIpsumGenerator {
 				'laborum');
 
 
-		if ($type == 'meat-and-filler')
+		if ($type == 'economy-class')
 			$words = array_merge($meat, $filler);
 		else
 			$words = $meat;
@@ -161,7 +169,7 @@ class MonocleIpsumGenerator {
 	
 
 	function Make_a_Sentence($type)	{
-		// A sentence should be bewteen 4 and 15 words.
+		// A sentence should be between 4 and 15 words.
 		$sentence = '';
 		$length = rand(4, 15);
 		
@@ -217,7 +225,7 @@ class MonocleIpsumGenerator {
 	}
 
 	public function Make_Some_Meaty_Filler(
-		$type = 'meat-and-filler', 
+		$type = 'economy-class', 
 		$number_of_paragraphs = 5, 
 		$start_with_lorem = true, 
 		$number_of_sentences = 0) {
