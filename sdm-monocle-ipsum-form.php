@@ -20,9 +20,10 @@ function sdm_monocle_ipsum_form($atts)
 {
 	$output = '';
 
+	// Our elegant, bespoke lorem ipsum text is expertly assembled by Florian-san and his team of the finest Swiss-Japanese craftsmen in their workshop on the shores of the Zürisee.
+
 	$form = '
 		<div id="monocle-ipsum-form">
-			<p>Our elegant, bespoke lorem ipsum text is expertly assembled by Florian-san and his team of the finest Swiss-Japanese craftsmen in their workshop on the shores of the Zürisee.</p>
 
 			<form id="make-it-bespoke" action="' . site_url('/') . '" method="get">
 				<div id="monocle-ipsum-paras">

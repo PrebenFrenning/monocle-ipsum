@@ -40,6 +40,7 @@ class MonocleIpsumGenerator {
 			'espresso',
 			'Muji',
 			'Boeing 777',
+			'Airbus A380',
 			'charming',
 			'signature',
 			'wardrobe',
@@ -47,7 +48,6 @@ class MonocleIpsumGenerator {
 			'perfect',
 			'ryokan',
 			'punctual',
-			'mediocre',
 			'elegant',
 			'sleepy',
 			'uniforms',
@@ -85,7 +85,9 @@ class MonocleIpsumGenerator {
 			'alluring',
 			'emerging',
 			'cutting-edge',
-			'conversation'
+			'conversation',
+			'impeccable',
+			'Helsinki'
 		);
 
 		$filler = array(
