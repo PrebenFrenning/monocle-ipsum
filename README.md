@@ -1,17 +1,17 @@
-A repository for the baconipsum.com code 
+A repository for the Monocle Ipsum code, forked from Bacon-Ipsum https://github.com/petenelson/bacon-ipsum 
 
 = What's in here? =
 
-gga-BaconIpsumGenerator.php - Contains the BaconIpsumGenerator class for generating meaty filler text.  For example:
+sdm-MonocleIpsumGenerator.php - Contains the MonocleIpsumGenerator class for generating bespoke filler text.  For example:
 
-	require_once 'gga-BaconIpsumGenerator.php';
-	$bacon_ipsum_generator = new BaconIpsumGenerator();
-	$meaty_filler = $bacon_ipsum_generator->Make_Some_Meaty_Filler('meat-and-filler', 3, true);
+	require_once 'sdm-MonocleIpsumGenerator.php';
+	$monocle_ipsum_generator = new MonocleIpsumGenerator();
+	$bespoke_filler = $monocle_ipsum_generator->Make_Some_Meaty_Filler('economy-class', 3, true);
 
 
-gga-bacon-ipsum-form.php - WordPress plugin for generating the form you see on our home page as well as processing the form and outputting bacon ipsum filler.
+sdm-monocle-ipsum-form.php - WordPress plugin for generating the form you see on our home page as well as processing the form and outputting monocle ipsum filler.
 
-gga-bacon-ipsum-api.php - WordPress plugin for our JSON API.
+sdm-monocle-ipsum-api.php - WordPress plugin for our JSON API.
 
 
 
