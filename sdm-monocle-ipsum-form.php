@@ -27,18 +27,21 @@ function sdm_monocle_ipsum_form($atts)
 
 			<form id="make-it-bespoke" action="' . site_url('/') . '" method="get">
 				<div id="monocle-ipsum-paras">
-					Paragraphs:
-					<input style="width: 40px;" type="text" name="paras" value="5" maxlength="2" />
+					<label for="paras">Paragraphs:</label>
+					<input type="text" name="paras" id="paras" value="5" maxlength="2" />
 				</div>
-				<div id="monocle-ipsum-type">
-					Type:
-					<input id="business-class" type="radio" name="type" value="business-class" checked="checked" /><label for="business-class">Business Class</label> <input id="economy-class" type="radio" name="type" value="economy-class" /><label for="economy-class">Economy Class</label>
-				</div>
+				<fieldset id="monocle-ipsum-type">
+					<label for="">Type:</label>
+					<div id="monocle-ipsum-type-buttons">
+						<label for="business-class"><input id="business-class" type="radio" name="type" value="business-class" checked="checked" /> <span>Business Class</span></label>
+						<label for="economy-class"><input id="economy-class" type="radio" name="type" value="economy-class" /> <span>Economy Class</span></label>
+					</div>
+				</fieldset>
 				<div id="monocle-ipsum-start-with">
-					<input id="start-with-lorem" type="checkbox" name="start-with-lorem" value="1" checked="checked" /> <label for="start-with-lorem">Start with \'Monocle ipsum dolor sit amet...\'</label>
+					<label for="start-with-lorem"><input id="start-with-lorem" type="checkbox" name="start-with-lorem" id="start-with-lorem" value="1" checked="checked" /> <span>Start with &lsquo;Monocle ipsum dolor sit amet...&rsquo;</span></label>
 				</div>
 				<div id="monocle-ipsum-submit">
-					<input type="submit" value="With our compliments" />
+					<button type="submit">With our compliments</button>
 				</div>
 			</form>
 		</div>
@@ -69,7 +72,7 @@ function sdm_monocle_ipsum_form($atts)
 			isset($_REQUEST["start-with-lorem"]) && $_REQUEST["start-with-lorem"] == "1");
 
 
-		$output = '<div>';
+		$output = '<div id="monocle-ipsum-generated">';
 		foreach($paragraphs as $paragraph)
 			$output .= '<p>' . $paragraph . '</p>';
 		 

@@ -87,7 +87,13 @@ class MonocleIpsumGenerator {
 			'cutting-edge',
 			'conversation',
 			'impeccable',
-			'Helsinki'
+			'Helsinki',
+			'Shinkansen',
+			'St Moritz',
+			'iconic',
+			'vibrant',
+			'bureaux',
+			'the best'
 		);
 
 		$filler = array(
