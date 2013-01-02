@@ -94,7 +94,9 @@ class MonocleIpsumGenerator {
 			'vibrant',
 			'bureaux',
 			'the best',
-			'essential'
+			'essential',
+			'Washlet',
+			'sophisticated'
 		);
 
 		$filler = array(
