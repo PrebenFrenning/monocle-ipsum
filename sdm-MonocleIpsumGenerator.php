@@ -39,7 +39,7 @@ class MonocleIpsumGenerator {
 			'hand-crafted',
 			'espresso',
 			'Muji',
-			'Boeing 777',
+			'Boeing 787',
 			'Airbus A380',
 			'charming',
 			'signature',
@@ -96,7 +96,9 @@ class MonocleIpsumGenerator {
 			'the best',
 			'essential',
 			'Washlet',
-			'sophisticated'
+			'sophisticated',
+			'ANA',
+			'K-pop'
 		);
 
 		$filler = array(
