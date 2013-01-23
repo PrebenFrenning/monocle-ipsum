@@ -98,7 +98,13 @@ class MonocleIpsumGenerator {
 			'Washlet',
 			'sophisticated',
 			'ANA',
-			'K-pop'
+			'K-pop',
+			'artisanal',
+			'cosy',
+			'craftsmanship',
+			'carefully curated',
+			'first-class',
+			'hub'
 		);
 
 		$filler = array(
