@@ -104,7 +104,11 @@ class MonocleIpsumGenerator {
 			'craftsmanship',
 			'carefully curated',
 			'first-class',
-			'hub'
+			'hub',
+			'Melbourne',
+			'efficient',
+			'the highest quality',
+			'quality of life'		
 		);
 
 		$filler = array(
