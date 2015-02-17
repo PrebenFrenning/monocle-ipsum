@@ -15,7 +15,7 @@ http://petenelson.com
 @GunGeekATX
 */
 
-add_shortcode('sdm-monocle-ipsum-form', 'sdm_monocle_ipsum_form');
+//add_shortcode('sdm-monocle-ipsum-form', 'sdm_monocle_ipsum_form');
 function sdm_monocle_ipsum_form($atts)
 {
 	$output = '';
